@@ -30,9 +30,9 @@ foreach filename [lrange ${design_files} 0 end-1] {
 
 #Compile const_package.vhd in the current directory
 vcom -2008 -work work ../tb/vec_add/const_package.vhd
-vcom -2008 -work work ../rtl/mtrf/top_const_types_package.vhd
-vcom -2008 -work work ../rtl/mtrf/tb_instructions.vhd
-vcom -2008 -work work ../rtl/dimarch/noc_types_n_constants.vhd
+#vcom -2008 -work work ../rtl/mtrf/top_const_types_package.vhd
+#vcom -2008 -work work ../rtl/mtrf/tb_instructions.vhd
+#vcom -2008 -work work ../rtl/dimarch/noc_types_n_constants.vhd
 
 #Compile testbench.vhd in the current directory
 vcom -2008 -work work ../tb/vec_add/testbench.vhd
