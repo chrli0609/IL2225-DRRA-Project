@@ -24,7 +24,7 @@ foreach filename [lrange ${hierarchy_files} 0 end-1] {
 #Compile silagonn design into "work"
 set design_files [split [read [open ${SOURCE_DIR}/silagonn_hierarchy.txt r]] "\n"]
 foreach filename [lrange ${design_files} 0 end-1] {
-	vcom -2008 -work dware ${SOURCE_DIR}/${filename}
+	vcom -2008 -work work ${SOURCE_DIR}/${filename}
 }
 
 
