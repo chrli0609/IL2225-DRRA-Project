@@ -1,5 +1,5 @@
 #Set the source directory
-set SOURCE_DIR ../../rtl; 
+set SOURCE_DIR ../rtl; 
 
 vlib work
 vlib dware
