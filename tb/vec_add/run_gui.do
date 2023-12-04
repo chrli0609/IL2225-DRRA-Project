@@ -17,11 +17,15 @@ foreach filename [lrange ${hierarchy_files} 0 end-1] {
 
 #Compile silagonn design into "work"
 
+
 #Compile const_package.vhd in the current directory
+vcom -2008 -work work ../tb/vec_add/const_package.vhd
 
 #Compile testbench.vhd in the current directory
+vcom -2008 -work work ../tb/vec_add/testbench.vhd
 
 #Open the simulation
+vsim work.testbench -voptargs=+acc -debugDB
 
 run 0 ns;
 #Load the waveform 
