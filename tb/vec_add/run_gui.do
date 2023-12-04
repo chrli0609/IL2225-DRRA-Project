@@ -9,10 +9,16 @@ set hierarchy_files [split [read [open ${SOURCE_DIR}/dware_hierarchy.txt r]] "\n
 foreach filename [lrange ${hierarchy_files} 0 end-1] {
 	vcom -2008 -work dware ${SOURCE_DIR}/${filename}
 }
+#set hierarchy_files [split [read [open ${SOURCE_DIR}/dware_hierarchy_verilog.txt r]] "\n"]
+#foreach filename [lrange ${hierarchy_files} 0 end-1] {
+#    vlog -v2001 -work dware ${SOURCE_DIR}/${filename}
+#}
+
 set hierarchy_files [split [read [open ${SOURCE_DIR}/dware_hierarchy_verilog.txt r]] "\n"]
 foreach filename [lrange ${hierarchy_files} 0 end-1] {
-    vlog -v2001 -work dware ${SOURCE_DIR}/${filename}
+    vlog -work dware ${SOURCE_DIR}/${filename}
 }
+
 
 
 #Compile silagonn design into "work"
