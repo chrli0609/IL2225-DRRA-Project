@@ -1,5 +1,5 @@
 #Set the source directory
-set SOURCE_DIR ../rtl; 
+set SOURCE_DIR ../../rtl; 
 
 vlib work
 vlib dware
@@ -27,16 +27,16 @@ foreach filename [lrange ${design_files} 0 end-1] {
 # }
 
 #Compile ./const_package.vhd 
-vcom -2008 -work work ../tb/vec_add/const_package.vhd
+vcom -2008 -work work const_package.vhd
 
 #Compile ./testbench.vhd 
-vcom -2008 -work work ../tb/vec_add/testbench.vhd
+vcom -2008 -work work testbench.vhd
 
 #Open the simulation
 vsim work.testbench -voptargs=+acc -debugDB
 
 #Load the waveform. You may see some errrors in loading the waveform that it cannot find some of the signals mentioned in the wave.do file. This is okay.
-do ../tb/vec_add/wave.do
+do wave.do
 
 #Run simulation for 1000ns
 run 1000 ns;
