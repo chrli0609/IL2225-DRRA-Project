@@ -64,9 +64,9 @@ add wave -group "AGU Rd1 <0, 0>"	-radix decimal \
 add wave -divider "SRAM Values"
 add wave -group "DiMArch <1, 0>" \
   -label "BANK_0"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_bot_l/DiMArchTile_bot_l/u_STILE/u_sram/sram_blocks(0)/u_sram_block_X/memory \
-  -label "BANK_1"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_bot_l/DiMArchTile_bot_l/u_STILE/u_sram/sram_blocks(1)/u_sram_block_X/memory
+  #-label "BANK_1"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_bot_l/DiMArchTile_bot_l/u_STILE/u_sram/sram_blocks(1)/u_sram_block_X/memory
   -label "BANK_0"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_top_l/DiMArchTile_top_l/u_STILE/u_sram/sram_blocks(0)/u_sram_block_X/memory \
-  -label "BANK_1"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_top_l/DiMArchTile_top_l/u_STILE/u_sram/sram_blocks(1)/u_sram_block_X/memory
+  #-label "BANK_1"  /DUT/dimarch/DiMArch_COLS(0)/DiMArch_ROWS(1)/if_dimarch_top_l/DiMArchTile_top_l/u_STILE/u_sram/sram_blocks(1)/u_sram_block_X/memory
   
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors { {Cursor 1} {0 ns} 0}
