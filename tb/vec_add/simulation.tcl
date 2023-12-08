@@ -36,7 +36,7 @@ vcom -2008 -work work ../tb/vec_add/testbench.vhd
 vsim work.testbench -voptargs=+acc -debugDB
 
 #Load the waveform. You may see some errrors in loading the waveform that it cannot find some of the signals mentioned in the wave.do file. This is okay.
-do wave.do
+do ../tb/vec_add/wave.do
 
 #Run simulation for 1000ns
 run 1000 ns;
