@@ -1,3 +1,5 @@
+#NOTE: To be run from this directory!
+
 #Set the source directory
 set SOURCE_DIR ../../rtl; 
 
@@ -20,11 +22,6 @@ set design_files [split [read [open ${SOURCE_DIR}/silagonn_hierarchy.txt r]] "\n
 foreach filename [lrange ${design_files} 0 end-1] {
 	vcom -2008 -work work ${SOURCE_DIR}/${filename}
 }
-
-# set design_files [split [read [open ${SOURCE_DIR}/dware_hierarchy_verilog.txt r]] "\n"]
-# foreach filename [lrange ${design_files} 0 end-1] {
-#     vlog -work dware ${SOURCE_DIR}/${filename}
-# }
 
 #Compile ./const_package.vhd 
 vcom -2008 -work work const_package.vhd
