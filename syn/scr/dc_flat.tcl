@@ -54,8 +54,8 @@ set symbol_library 			"tcbn90g.sdb"
 set synthetic_library 			"standard.sldb\
 					 dw_foundation.sldb";
 
-#set link_library 			"* ${target_library}"
-set link_library 			"* ${synthetic_library}"
+set link_library 			"* ${target_library}"
+#set link_library 			"* ${synthetic_library}"
 
 # set the TOP_NAME of the design
 set TOP_NAME drra_wrapper
@@ -85,7 +85,7 @@ uniquify
 source ${SYN_DIR}/constraints.sdc
 
 #compile
-compile -map_effor medium
+compile -map_effort medium
 
 #report area, timing, power, constraints, cell in the report directory with a suitable name
 report_constraints > ${OUT_DIR}/${TOP_NAME}_constraints.sdc
