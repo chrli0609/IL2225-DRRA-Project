@@ -90,9 +90,9 @@ compile -map_effor medium
 #report area, timing, power, constraints, cell in the report directory with a suitable name
 report_constraints > ${OUT_DIR}/${TOP_NAME}_constraints.sdc
 report_area > ${OUT_DIR}/${TOP_NAME}_area.txt
-report_power > ${OUT_DIR}/${TOP_NAME}_cells.txt
-report_timing > ${OUT_DIR}/${TOP_NAME}_power.txt
+report_power > ${OUT_DIR}/${TOP_NAME}_power.txt
+report_timing > ${OUT_DIR}/${TOP_NAME}_timing.txt
 
 #export the netlist, ddc and sdf file in out direcory with a suitable name
-write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.${SYN_DIR}/constraints.sdc
-write -hierarchy -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
+write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
+write_netlist ${OUT_DIR}/${TOP_NAME}.v

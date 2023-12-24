@@ -57,6 +57,7 @@ set synthetic_library 			"standard.sldb\
 set link_library 			"* ${target_library}"
 
 #set the top name
+set TOP_NAME drra_wrapper
 
 # Directories for output material
 set REPORT_DIR  ../syn/rpt;      # synthesis reports: timing, area, etc.
@@ -101,14 +102,99 @@ proc nth_pass {n} {
 	
 	# Compile the "silego" entity
 	# Hint: analyze the files in ${SOURCE_DIR}/silego_hierarchy.txt. elaborate the design silego, set current_design to silego, link, uniquify, source global constraints, source constraints from previous pass, set dont_touch for divider pipe and compile
+	set hierarchy_files [split [read [open ${SOURCE_DIR}/silego_hierarchy.txt r]] "\n"]
+	foreach filename [lrange ${hierarchy_files} 0 end-1] {
+	    if {![string equal [string index $filename 0] "#"]} {
+	        if {[string equal [file extension $filename] ".vhd"]} {
+	            analyze -format vhdl -lib WORK ${SOURCE_DIR}/${filename}
+	        } elseif {[string equal [file extension $filename] ".v"]} {
+	            analyze -format verilog -lib WORK ${SOURCE_DIR}/${filename}
+	        }
+	    }
+	}
+	elaborate silego
+	link
+	uniquify
+	if  {$n > 1} {
+	    source ${OUT_DIR}/pass${prev_n}/silego.wscr
+	}
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	compile
 	
     # Compile all the Silago tile files
-	# Hint: COmpile each tile one by one. Analyze and elaborate the tile design, set current_design to that tile, link, uniquify, source global constraints, source constraints from previous pass, set dont_touch for divider pipe, silego and compile
-	
+	# Hint: Compile each tile one by one. Analyze and elaborate the tile design, set current_design to that tile, link, uniquify, source global constraints, source constraints from previous pass, set dont_touch for divider pipe, silego and compile
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top_left_corner.vhd
+	elaborate Silago_top_left_corner
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top.vhd
+	elaborate Silago_top
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top_right_corner.vhd
+	elaborate Silago_top_right_corner
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_left_corner.vhd
+	elaborate Silago_bot_left_corner
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot.vhd
+	elaborate Silago_bot
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_right_corner.vhd
+	elaborate Silago_bot_right_corner
+	link
+	uniquify
+	source ${SYN_DIR}/constraints.sdc
+	set_dont_touch divider_pipe
+	set_dont_touch silego 
+	compile
+
 	# Analyze, elaborate the DRRA wrapper 
 	# Hint: Analyze and elaborate the design, set current_design to the wrapper, link, source global constraints, set dont_touch for divider pipe, silego, all the tiles, DO NOT UNIQUIFY OR COMPILE! The design is already compiled as all the components are already compiled and there is no logic in wrapper outside of the tiles.
+	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/drra_wrapper.vhd
+	elaborate drra_wrapper
+	link
+	source ${SYN_DIR}/constraints.sdc
+	dont_touch divider_pipe
+	dont_touch silego
+	dont_touch Silago_top_left_corner
+	dont_touch Silago_top
+	dont_touch Silago_top_right_corner
+	dont_touch Silago_bot_left_corner
+	dont_touch Silago_bot
+	dont_touch Silago_bot_right_corner
 	
     #report timing of drra wrapper in the current pass
+	report_timing > ${OUT_DIR}/pass${n}/drra_wrapper_timing.txt
 	
     #characterizing the constraints 
 	characterize -constraints {Silago_bot_l_corner_inst_0_1/SILEGO_cell \
@@ -121,8 +207,18 @@ proc nth_pass {n} {
 }
 
 #Execute n passes. Decide  on a resonable n.
-
+nth_pass 1
 
 #Set current design to drra_wrapper and report timing, power, area.
+current_design ${TOP_NAME}
 
-#Write the netlist, ddc, sdc and sdf.
+report_constraints > ${OUT_DIR}/${TOP_NAME}_constraints.sdc
+report_area > ${OUT_DIR}/${TOP_NAME}_area.txt
+report_power > ${OUT_DIR}/${TOP_NAME}_power.txt
+report_timing > ${OUT_DIR}/${TOP_NAME}_timing.txt
+
+#Write the netlist, ddc, sdc and sdf
+write -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
+write_netlist ../phy/db/${TOP_NAME}.v
+write_sdf ../phy/db/${TOP_NAME}.sdf
+write_sdc ../phy/db/${TOP_NAME}.sdc
