@@ -119,7 +119,7 @@ proc nth_pass {n} {
 	    source ${OUT_DIR}/pass${prev_n}/silego.wscr
 	}
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
+	dont_touch divider_pipe true
 	compile
 	
     # Compile all the Silago tile files
@@ -129,8 +129,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top.vhd
@@ -138,8 +138,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top_right_corner.vhd
@@ -147,8 +147,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_left_corner.vhd
@@ -156,8 +156,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot.vhd
@@ -165,8 +165,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_right_corner.vhd
@@ -174,8 +174,8 @@ proc nth_pass {n} {
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
-	set_dont_touch divider_pipe
-	set_dont_touch silego 
+	dont_touch divider_pipe true
+	dont_touch silego true
 	compile
 
 	# Analyze, elaborate the DRRA wrapper 
@@ -184,14 +184,14 @@ proc nth_pass {n} {
 	elaborate drra_wrapper
 	link
 	source ${SYN_DIR}/constraints.sdc
-	dont_touch divider_pipe
-	dont_touch silego
-	dont_touch Silago_top_left_corner
-	dont_touch Silago_top
-	dont_touch Silago_top_right_corner
-	dont_touch Silago_bot_left_corner
-	dont_touch Silago_bot
-	dont_touch Silago_bot_right_corner
+	dont_touch divider_pipe true
+	dont_touch silego true
+	dont_touch Silago_top_left_corner true
+	dont_touch Silago_top true
+	dont_touch Silago_top_right_corner true
+	dont_touch Silago_bot_left_corner true
+	dont_touch Silago_bot true
+	dont_touch Silago_bot_right_corner true
 	
     #report timing of drra wrapper in the current pass
 	report_timing > ${OUT_DIR}/pass${n}/drra_wrapper_timing.txt
