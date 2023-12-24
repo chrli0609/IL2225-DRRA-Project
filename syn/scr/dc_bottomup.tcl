@@ -212,13 +212,13 @@ nth_pass 1
 #Set current design to drra_wrapper and report timing, power, area.
 current_design ${TOP_NAME}
 
-report_constraints > ${OUT_DIR}/${TOP_NAME}_constraints.sdc
-report_area > ${OUT_DIR}/${TOP_NAME}_area.txt
-report_power > ${OUT_DIR}/${TOP_NAME}_power.txt
-report_timing > ${OUT_DIR}/${TOP_NAME}_timing.txt
+report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints.sdc
+report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
+report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
+report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
 
 #Write the netlist, ddc, sdc and sdf
 write -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write_netlist ../phy/db/${TOP_NAME}.v
-write_sdf ../phy/db/${TOP_NAME}.sdf
-write_sdc ../phy/db/${TOP_NAME}.sdc
+write_netlist ${OUT_DIR}/${TOP_NAME}.v
+write_sdf ${OUT_DIR}/${TOP_NAME}.sdf
+write_sdc ${OUT_DIR}/${TOP_NAME}.sdc
