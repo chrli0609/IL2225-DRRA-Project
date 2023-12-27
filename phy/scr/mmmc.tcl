@@ -47,6 +47,7 @@ create_delay_corner \
     -timing_condition {cond_best} \
     -rc_corner rc_best
 puts [pwd]
+
 create_constraint_mode -name CM -sdc_files [list ../syn/constraints.sdc]
 create_analysis_view -name AV_WC_RCWORST -constraint_mode CM -delay_corner WC_dc
 create_analysis_view -name AV_BC_RCBEST -constraint_mode CM -delay_corner BC_dc
