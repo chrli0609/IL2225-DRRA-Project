@@ -31,19 +31,19 @@ create_rc_corner \
 if {0} {
 create_timing_condition \
     -name cond_worst \
-    -library_sets LIBSET_WC \
+    -library_set LIBSET_WC \
     -opcond_library "wc"
 
 create_timing_condition \
     -name cond_best \
-    -library_sets LIBSET_BC \
+    -library_set LIBSET_BC \
     -opcond_library "bc"
 }
-#    -timing_condition {cond_worst} \
-create_delay_corner -name WC_dc -library_sets LIBSET_WC -opcond_library "wc" -rc_corner rc_worst
 
-#    -timing_condition {cond_best} \
-create_delay_corner -name BC_dc -library_sets LIBSET_BC -opcond_library "bc" -rc_corner rc_best
+create_delay_corner -name WC_dc -library_set LIBSET_WC -opcond_library "wc" -rc_corner rc_worst
+
+
+create_delay_corner -name BC_dc -library_set LIBSET_BC -opcond_library "bc" -rc_corner rc_best
 
 puts [pwd]
 create_constraint_mode -name CM -sdc_files [list ../syn/constraints.sdc]
