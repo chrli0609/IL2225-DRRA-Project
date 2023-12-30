@@ -89,6 +89,7 @@ proc nth_pass {n} {
 	    }
 	}
 	# Compile the divider pipe, ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd. We would like to import constraints in the next pass over divider pipe
+	analyze -format verilog -lib WORK ${SOURCE_DIR}/DW/DW_divider_pipe.v
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/DPU/divider_pipe.vhd
 	elaborate divider_pipe
 	current_design divider_pipe

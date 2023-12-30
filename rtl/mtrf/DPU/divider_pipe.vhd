@@ -69,7 +69,7 @@ USE ieee.std_logic_1164.ALL;
 --! Standard numeric package for signed and unsigned
 USE ieee.numeric_std.ALL;
 --! Package for DPU Types and Constants
-USE work.DPU_pkg.ALL;
+-- USE work.DPU_pkg.ALL;
 --! Packages from DesignWare library
 USE DWARE.DWpackages.ALL;
 --! Packages from DesignWare library
