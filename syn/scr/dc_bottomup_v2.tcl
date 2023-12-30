@@ -113,6 +113,7 @@ proc nth_pass {n} {
 	    }
 	}
 	elaborate silego
+	current_design silego
 	link
 	uniquify
 	if  {$n > 1} {
@@ -126,6 +127,7 @@ proc nth_pass {n} {
 	# Hint: Compile each tile one by one. Analyze and elaborate the tile design, set current_design to that tile, link, uniquify, source global constraints, source constraints from previous pass, set dont_touch for divider pipe, silego and compile
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top_left_corner.vhd
 	elaborate Silago_top_left_corner
+	current_design Silago_top_left_corner
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -135,6 +137,7 @@ proc nth_pass {n} {
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top.vhd
 	elaborate Silago_top
+	current_design Silago_top
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -144,6 +147,7 @@ proc nth_pass {n} {
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_top_right_corner.vhd
 	elaborate Silago_top_right_corner
+	current_design Silago_top_right_corner
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -153,6 +157,7 @@ proc nth_pass {n} {
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_left_corner.vhd
 	elaborate Silago_bot_left_corner
+	current_design Silago_bot_left_corner
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -162,6 +167,7 @@ proc nth_pass {n} {
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot.vhd
 	elaborate Silago_bot
+	current_design Silago_bot
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -171,6 +177,7 @@ proc nth_pass {n} {
 
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/Silago_bot_right_corner.vhd
 	elaborate Silago_bot_right_corner
+	current_design Silago_bot_right_corner
 	link
 	uniquify
 	source ${SYN_DIR}/constraints.sdc
@@ -212,13 +219,13 @@ nth_pass 1
 #Set current design to drra_wrapper and report timing, power, area.
 current_design ${TOP_NAME}
 
-report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints.sdc
-report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
-report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
-report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
+report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints_2.sdc
+report_area > ${REPORT_DIR}/${TOP_NAME}_area_2.txt
+report_power > ${REPORT_DIR}/${TOP_NAME}_power_2.txt
+report_timing > ${REPORT_DIR}/${TOP_NAME}_timing_2.txt
 
 #Write the netlist, ddc, sdc and sdf
 write -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write_file -format verilog -hier -output ${OUT_DIR}/${TOP_NAME}.v
+write -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
 write_sdf ${OUT_DIR}/${TOP_NAME}.sdf
 write_sdc ${OUT_DIR}/${TOP_NAME}.sdc
