@@ -219,6 +219,6 @@ report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
 
 #Write the netlist, ddc, sdc and sdf
 write -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write -format verilog -output ${OUT_DIR}/${TOP_NAME}.v
+write_file -format verilog -hier -output ${OUT_DIR}/${TOP_NAME}.v
 write_sdf ${OUT_DIR}/${TOP_NAME}.sdf
 write_sdc ${OUT_DIR}/${TOP_NAME}.sdc

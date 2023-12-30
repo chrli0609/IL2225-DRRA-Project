@@ -95,4 +95,4 @@ report_timing > ${OUT_DIR}/${TOP_NAME}_timing.txt
 
 #export the netlist, ddc and sdf file in out direcory with a suitable name
 write -hierarchy -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write_netlist ${OUT_DIR}/${TOP_NAME}.v
+write_file -format verilog -output ../syn/db/parallel_fir.v
