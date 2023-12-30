@@ -31,6 +31,7 @@ mtrf/register_file_top.vhd
 mtrf/DPU/DPU_pkg.vhd
 mtrf/sequencer.vhd
 mtrf/switchbox.vhd
+DW/DW_div_pipe.v
 mtrf/DPU/adder_nbits.vhd
 mtrf/DPU/divider_pipe.vhd
 mtrf/DPU/Maxmin_Unit.vhd
