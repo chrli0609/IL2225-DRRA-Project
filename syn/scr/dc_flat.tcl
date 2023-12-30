@@ -73,7 +73,13 @@ set hierarchy_files [split [read [open ${SOURCE_DIR}/${TOP_NAME}_hierarchy.txt r
 
 foreach filename [lrange ${hierarchy_files} 0 end-1] {
     puts ${filename}
-    analyze -format VHDL -lib WORK "${SOURCE_DIR}/${filename}"
+	if {![string equal [string index $filename 0] "#"]} {
+		if {[string equal [file extension $filename] ".vhd"]} {
+			analyze -format VHDL -lib WORK "${SOURCE_DIR}/${filename}"
+		} elseif {[string equal [file extension $filename] ".v"]} {
+			analyze -format verilog -lib WORK "${SOURCE_DIR}/${filename}"
+		}
+	}
 }
 
 #elaborate the design, link, and uniquify
