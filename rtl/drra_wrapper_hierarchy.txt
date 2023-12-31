@@ -5,6 +5,7 @@ mtrf/top_consts_types_package.vhd
 mtrf/util_package.vhd
 functions.vhd
 mtrf/tb_instructions.vhd
+DW/DW_div_pipe.v
 dimarch/noc_types_n_constants.vhd
 dimarch/crossbar_types_n_constants.vhd
 mtrf/DPU/DPU_pkg.vhd
@@ -31,7 +32,6 @@ mtrf/register_file_top.vhd
 mtrf/DPU/DPU_pkg.vhd
 mtrf/sequencer.vhd
 mtrf/switchbox.vhd
-DW/DW_div_pipe.v
 mtrf/DPU/adder_nbits.vhd
 mtrf/DPU/divider_pipe.vhd
 mtrf/DPU/Maxmin_Unit.vhd
