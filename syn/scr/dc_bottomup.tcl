@@ -214,13 +214,13 @@ nth_pass 1
 #Set current design to drra_wrapper and report timing, power, area.
 current_design ${TOP_NAME}
 
-report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints.sdc
-report_area > ${REPORT_DIR}/${TOP_NAME}_area.txt
-report_power > ${REPORT_DIR}/${TOP_NAME}_power.txt
-report_timing > ${REPORT_DIR}/${TOP_NAME}_timing.txt
+report_constraints > ${REPORT_DIR}/${TOP_NAME}_constraints_bottomup.sdc
+report_area > ${REPORT_DIR}/${TOP_NAME}_area_bottomup.txt
+report_power > ${REPORT_DIR}/${TOP_NAME}_power_bottomup.txt
+report_timing > ${REPORT_DIR}/${TOP_NAME}_timing_bottomup.txt
 
 #Write the netlist, ddc, sdc and sdf
-write -format ddc -output ${OUT_DIR}/${TOP_NAME}.ddc
-write_file -format verilog -hier -output ${OUT_DIR}/${TOP_NAME}.v
-write_sdf ${OUT_DIR}/${TOP_NAME}.sdf
-write_sdc ${OUT_DIR}/${TOP_NAME}.sdc
+write -format ddc -output ${OUT_DIR}/${TOP_NAME}_bottomup.ddc
+write_file -format verilog -hier -output ${OUT_DIR}/${TOP_NAME}_bottomup.v
+write_sdf ${OUT_DIR}/${TOP_NAME}_bottomup.sdf
+write_sdc ${OUT_DIR}/${TOP_NAME}_bottomup.sdc
