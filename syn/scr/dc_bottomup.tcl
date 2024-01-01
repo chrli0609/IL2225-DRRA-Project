@@ -184,6 +184,7 @@ proc nth_pass {n} {
 	analyze -format vhdl -lib WORK ${SOURCE_DIR}/mtrf/drra_wrapper.vhd
 	elaborate drra_wrapper
 	link
+	uniquify
 	source ${SYN_DIR}/constraints.sdc
 	dont_touch divider_pipe true
 	dont_touch silego true
