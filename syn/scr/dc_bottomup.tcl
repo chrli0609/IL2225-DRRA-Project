@@ -54,8 +54,7 @@ set symbol_library 			"tcbn90g.sdb"
 set synthetic_library 			"standard.sldb\
 					 dw_foundation.sldb";
 
-set link_library 			"* ${target_library}"
-set link_library 			"* ${synthetic_library}"
+set link_library 			"* ${target_library} ${synthetic_library}"
 
 #set the top name
 set TOP_NAME drra_wrapper
