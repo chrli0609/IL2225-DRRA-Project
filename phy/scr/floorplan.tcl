@@ -1,6 +1,6 @@
 set margin 10
-set drra_width 230 
-set drra_height 250 
+set drra_width 1000
+set drra_height 1000
 
 #Create a floorplan based on the values above with suitable dimensions for width, height and margin
 create_floorplan -site core -core_size [expr {8*$drra_width+ 9*$margin}] [expr {2*$drra_height + 3*$margin}] 0 0 0 0
