@@ -14,9 +14,9 @@ for {set i 0} {$i < 8} {incr i} {
     set y2 [expr {double($y1 + $drra_height)}]
 
     set x3 [expr {double($margin * ($i + 1) + $drra_width * $i)}]
-    set y3 [expr {double($margin + $drra_height)}]
-    set x4 [expr {double($x1 + $drra_width)}]
-    set y4 [expr {double($y1 + $drra_height)}]
+    set y3 [expr {double(2 * $margin + $drra_height)}]
+    set x4 [expr {double($x3 + $drra_width)}]
+    set y4 [expr {double($y3 + $drra_height)}]
 
     set cell [lindex ${partition_hinst_list} [expr {2*$i}] ]
     puts $cell
