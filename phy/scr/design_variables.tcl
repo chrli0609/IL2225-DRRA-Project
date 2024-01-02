@@ -18,9 +18,9 @@ set partition_hinst_list {
 
 #partition module names from RTL
 set partition_module_list {
-    Silago_top_l_corner_inst \
-    Silago_bot_l_corner_inst \
-    Silago_top_inst \
-    Silago_bot_inst \
-    Silago_top_r_corner_inst \
-    Silago_bot_r_corner_inst}
+    Silago_top_left_corner \
+    Silago_bot_left_corner \
+    Silago_top \
+    Silago_bot \
+    Silago_top_right_corner \
+    Silago_bot_right_corner}
