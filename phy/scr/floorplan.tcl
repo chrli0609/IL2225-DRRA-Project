@@ -18,11 +18,11 @@ for {set i 0} {$i < 8} {incr i} {
     set x4 [expr {double($x1 + $drra_width)}]
     set y4 [expr {double($y1 + $drra_height)}]
 
-    set cell [lindex ${partition_hinst_list} {2*$i} ]
+    set cell [lindex ${partition_hinst_list} [expr {2*$i}] ]
     puts $cell
     create_boundary_constraint -type fence -hinst $cell -rects [list [list $x1 $y1 $x2 $y2]]
 
-    set cell [lindex ${partition_hinst_list} {2*$i+1} ]
+    set cell [lindex ${partition_hinst_list} [expr {2*$i+1}] ]
     puts $cell
     create_boundary_constraint -type fence -hinst $cell -rects [list [list $x3 $y3 $x4 $y4]]
 }
