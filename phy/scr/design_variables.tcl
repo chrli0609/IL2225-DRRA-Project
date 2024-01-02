@@ -20,17 +20,17 @@ set partition_hinst_list {
 set partition_module_list {
     Silago_top_left_corner \
     Silago_bot_left_corner \
-    Silago_top_0 \
-    Silago_bot_0 \
-    Silago_top_1 \
-    Silago_bot_1 \
-    Silago_top_2 \
-    Silago_bot_2 \
-    Silago_top_3 \
-    Silago_bot_3 \
-    Silago_top_4 \
-    Silago_bot_4 \
-    Silago_top_5 \
-    Silago_bot_5 \
+    Silago_top_SPC_0 \
+    Silago_bot_SPC_0 \
+    Silago_top_SPC_1 \
+    Silago_bot_SPC_1 \
+    Silago_top_SPC_2 \
+    Silago_bot_SPC_2 \
+    Silago_top_SPC_3 \
+    Silago_bot_SPC_3 \
+    Silago_top_SPC_4 \
+    Silago_bot_SPC_4 \
+    Silago_top_SPC_5 \
+    Silago_bot_SPC_5 \
     Silago_top_right_corner \
     Silago_bot_right_corner}
