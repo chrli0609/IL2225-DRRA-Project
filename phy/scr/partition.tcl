@@ -10,6 +10,6 @@ assign_io_pins
 set_db budget_virtual_opt_engine none
 set_db budget_constant_model true
 set_db budget_include_latency true
-create_timing_budget -partitions ${partition_module_list}
+create_timing_budget -partitions ${partition_hinst_list}
 commit_partitions
 write_partitions -dir ${PART_DIR} -def
