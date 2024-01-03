@@ -36,13 +36,13 @@ wait_for_session_exit() {
 
 for i in  {1..5}; do
 	tmux new-session -d -s innovus_session_top 'innovus -stylus'
-	tmux send-keys -t innovus_session_top 'cd ../phy/db/part/Silago_top_SPC_$i.enc.dat/' Enter
+	tmux send-keys -t innovus_session_top "cd ../phy/db/part/Silago_top_SPC_$i.enc.dat/" Enter
 	tmux send-keys -t innovus_session_top 'source ../../../scr/pnr_partition.tcl' Enter
 	tmux send-keys -t innovus_session_top 'exit' Enter
 	wait_for_session_exit innovus_session_top
 	
 	tmux new-session -d -s innovus_session_bot 'innovus -stylus'
-	tmux send-keys -t innovus_session_bot 'cd ../phy/db/part/Silago_bot_SPC_$i.enc.dat/' Enter
+	tmux send-keys -t innovus_session_bot "cd ../phy/db/part/Silago_bot_SPC_$i.enc.dat/" Enter
 	tmux send-keys -t innovus_session_bot 'source ../../../scr/pnr_partition.tcl' Enter
 	tmux send-keys -t innovus_session_bot 'exit' Enter
 	wait_for_session_exit innovus_session_bot
