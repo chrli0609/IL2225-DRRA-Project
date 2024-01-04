@@ -1,0 +1,598 @@
+Warning: Design 'drra_wrapper' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'drra_wrapper' contains 6 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : drra_wrapper
+Version: R-2020.09-SP5-3
+Date   : Wed Jan  3 23:31:57 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: NCCOM   Library: tcbn90gtc
+Wire Load Model Mode: segmented
+
+  Startpoint: Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/mode_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/acc_out_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  register_row_0     ZeroWireload          tcbn90gtc
+  register_row_1     ZeroWireload          tcbn90gtc
+  register_row_2     ZeroWireload          tcbn90gtc
+  register_row_3     ZeroWireload          tcbn90gtc
+  register_row_4     ZeroWireload          tcbn90gtc
+  register_row_5     ZeroWireload          tcbn90gtc
+  register_row_6     ZeroWireload          tcbn90gtc
+  register_row_7     ZeroWireload          tcbn90gtc
+  register_row_8     ZeroWireload          tcbn90gtc
+  register_row_9     ZeroWireload          tcbn90gtc
+  register_row_10    ZeroWireload          tcbn90gtc
+  register_row_11    ZeroWireload          tcbn90gtc
+  register_row_12    ZeroWireload          tcbn90gtc
+  register_row_13    ZeroWireload          tcbn90gtc
+  register_row_14    ZeroWireload          tcbn90gtc
+  register_row_15    ZeroWireload          tcbn90gtc
+  register_row_16    ZeroWireload          tcbn90gtc
+  register_row_17    ZeroWireload          tcbn90gtc
+  register_row_18    ZeroWireload          tcbn90gtc
+  register_row_19    ZeroWireload          tcbn90gtc
+  register_row_20    ZeroWireload          tcbn90gtc
+  register_row_21    ZeroWireload          tcbn90gtc
+  register_row_22    ZeroWireload          tcbn90gtc
+  register_row_23    ZeroWireload          tcbn90gtc
+  register_row_24    ZeroWireload          tcbn90gtc
+  register_row_25    ZeroWireload          tcbn90gtc
+  register_row_26    ZeroWireload          tcbn90gtc
+  register_row_27    ZeroWireload          tcbn90gtc
+  register_row_28    ZeroWireload          tcbn90gtc
+  register_row_29    ZeroWireload          tcbn90gtc
+  register_row_30    ZeroWireload          tcbn90gtc
+  register_row_31    ZeroWireload          tcbn90gtc
+  register_row_32    ZeroWireload          tcbn90gtc
+  register_row_33    ZeroWireload          tcbn90gtc
+  register_row_34    ZeroWireload          tcbn90gtc
+  register_row_35    ZeroWireload          tcbn90gtc
+  register_row_36    ZeroWireload          tcbn90gtc
+  register_row_37    ZeroWireload          tcbn90gtc
+  register_row_38    ZeroWireload          tcbn90gtc
+  register_row_39    ZeroWireload          tcbn90gtc
+  register_row_40    ZeroWireload          tcbn90gtc
+  register_row_41    ZeroWireload          tcbn90gtc
+  register_row_42    ZeroWireload          tcbn90gtc
+  register_row_43    ZeroWireload          tcbn90gtc
+  register_row_44    ZeroWireload          tcbn90gtc
+  register_row_45    ZeroWireload          tcbn90gtc
+  register_row_46    ZeroWireload          tcbn90gtc
+  register_row_47    ZeroWireload          tcbn90gtc
+  register_row_48    ZeroWireload          tcbn90gtc
+  register_row_49    ZeroWireload          tcbn90gtc
+  register_row_50    ZeroWireload          tcbn90gtc
+  register_row_51    ZeroWireload          tcbn90gtc
+  register_row_52    ZeroWireload          tcbn90gtc
+  register_row_53    ZeroWireload          tcbn90gtc
+  register_row_54    ZeroWireload          tcbn90gtc
+  register_row_55    ZeroWireload          tcbn90gtc
+  register_row_56    ZeroWireload          tcbn90gtc
+  register_row_57    ZeroWireload          tcbn90gtc
+  register_row_58    ZeroWireload          tcbn90gtc
+  register_row_59    ZeroWireload          tcbn90gtc
+  register_row_60    ZeroWireload          tcbn90gtc
+  register_row_61    ZeroWireload          tcbn90gtc
+  register_row_62    ZeroWireload          tcbn90gtc
+  register_row_63    ZeroWireload          tcbn90gtc
+  divider_pipe       ZeroWireload          tcbn90gtc
+  RaccuRF            ZeroWireload          tcbn90gtc
+  RACCU              ZeroWireload          tcbn90gtc
+  autoloop           ZeroWireload          tcbn90gtc
+  AGU_RFblock_0      ZeroWireload          tcbn90gtc
+  AGU_0              ZeroWireload          tcbn90gtc
+  AGU_1              ZeroWireload          tcbn90gtc
+  AGU_RFblock_1      ZeroWireload          tcbn90gtc
+  AGU_2              ZeroWireload          tcbn90gtc
+  AGU_3              ZeroWireload          tcbn90gtc
+  shadowReg_AGU_0    ZeroWireload          tcbn90gtc
+  shadowReg_AGU_1    ZeroWireload          tcbn90gtc
+  shadowReg_AGU_2    ZeroWireload          tcbn90gtc
+  shadowReg_AGU_3    ZeroWireload          tcbn90gtc
+  shadowReg_AGU_4    ZeroWireload          tcbn90gtc
+  shadowReg_AGU_5    ZeroWireload          tcbn90gtc
+  register_file      ZeroWireload          tcbn90gtc
+  scaler             ZeroWireload          tcbn90gtc
+  NACU_0_0_0         ZeroWireload          tcbn90gtc
+  NACU_0_0_1         ZeroWireload          tcbn90gtc
+  RaccuAndLoop       ZeroWireload          tcbn90gtc
+  register_file_top  ZeroWireload          tcbn90gtc
+  DPU                ZeroWireload          tcbn90gtc
+  shadowReg          ZeroWireload          tcbn90gtc
+  sequencer          ZeroWireload          tcbn90gtc
+  MTRF_cell          ZeroWireload          tcbn90gtc
+  cell_config_swb    ZeroWireload          tcbn90gtc
+  addr_assign        ZeroWireload          tcbn90gtc
+  silego             ZeroWireload          tcbn90gtc
+  addr_assign_drra_top_l_corner
+                     ZeroWireload          tcbn90gtc
+  Silago_bot_right_corner
+                     ZeroWireload          tcbn90gtc
+  Silago_top_right_corner
+                     ZeroWireload          tcbn90gtc
+  Silago_bot         ZeroWireload          tcbn90gtc
+  Silago_top         ZeroWireload          tcbn90gtc
+  Silago_bot_left_corner
+                     ZeroWireload          tcbn90gtc
+  drra_wrapper       ZeroWireload          tcbn90gtc
+  Silago_top_left_corner
+                     ZeroWireload          tcbn90gtc
+  Sat_n_round_0      ZeroWireload          tcbn90gtc
+  InputMux_16_5_0    ZeroWireload          tcbn90gtc
+  InputMux_16_5_1    ZeroWireload          tcbn90gtc
+  InputMux_16_5_2    ZeroWireload          tcbn90gtc
+  InputMux_16_5_3    ZeroWireload          tcbn90gtc
+  InputMux_16_5_4    ZeroWireload          tcbn90gtc
+  InputMux_16_5_5    ZeroWireload          tcbn90gtc
+  InputMux_16_5_6    ZeroWireload          tcbn90gtc
+  InputMux_16_5_7    ZeroWireload          tcbn90gtc
+  InputMux_16_5_8    ZeroWireload          tcbn90gtc
+  InputMux_16_5_9    ZeroWireload          tcbn90gtc
+  InputMux_16_5_10   ZeroWireload          tcbn90gtc
+  InputMux_16_5_11   ZeroWireload          tcbn90gtc
+  switchbox_16_5     ZeroWireload          tcbn90gtc
+  twos_compl_16_4    ZeroWireload          tcbn90gtc
+  twos_compl_16_4_DW01_inc_0_DW01_inc_35
+                     ZeroWireload          tcbn90gtc
+  twos_compl_16_0    ZeroWireload          tcbn90gtc
+  twos_compl_16_0_DW01_inc_0_DW01_inc_31
+                     ZeroWireload          tcbn90gtc
+  Squash_Unit_16_11  ZeroWireload          tcbn90gtc
+  Q_format_n_to_one_16_11_11
+                     ZeroWireload          tcbn90gtc
+  conf_mul_Beh_9_1_1_DW_mult_tc_1_DW_mult_tc_22
+                     ZeroWireload          tcbn90gtc
+  conf_mul_Beh_9_1_1 ZeroWireload          tcbn90gtc
+  conf_mul_Beh_16_2_1
+                     ZeroWireload          tcbn90gtc
+  conf_mul_Beh_9_1_1_DW01_add_0_DW01_add_28
+                     ZeroWireload          tcbn90gtc
+  conf_mul_Beh_16_2_1_DW01_add_0_DW01_add_24
+                     ZeroWireload          tcbn90gtc
+  adder_nbits_32_2_1_DW01_add_1_DW01_add_21
+                     ZeroWireload          tcbn90gtc
+  adder_nbits_32_2_1 ZeroWireload          tcbn90gtc
+  adder_nbits_32_2_1_DW01_add_0_DW01_add_20
+                     ZeroWireload          tcbn90gtc
+  Saturation_Unit_1  ZeroWireload          tcbn90gtc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/mode_reg_reg[3]/CP (DFCNQD1)
+                                                          0.00 #     0.00 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/mode_reg_reg[3]/Q (DFCNQD1)
+                                                          0.17       0.17 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U550/ZN (INVD1)
+                                                          0.06       0.23 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U555/ZN (ND2D1)
+                                                          0.12       0.35 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U743/ZN (NR2D0)
+                                                          0.04       0.39 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U831/ZN (AOI222D0)
+                                                          0.15       0.54 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U4/Z (AN3D1)
+                                                          0.22       0.75 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U853/ZN (NR2D0)
+                                                          0.05       0.80 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/d_in[19] (Sat_n_round_0)
+                                                          0.00       0.80 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U67/Z (OR4D0)
+                                                          0.15       0.95 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U62/Z (OR4D0)
+                                                          0.13       1.08 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U59/ZN (AOI32D0)
+                                                          0.10       1.18 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U58/ZN (INVD0)
+                                                          0.02       1.20 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U57/ZN (AOI21D0)
+                                                          0.10       1.30 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U56/ZN (OAI21D0)
+                                                          0.06       1.36 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/U55/Z (AO221D0)
+                                                          0.19       1.55 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_sat_n_round_inst_1/d_out[0] (Sat_n_round_0)
+                                                          0.00       1.55 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U333/ZN (INVD1)
+                                                          0.06       1.61 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1067/Z (AN2D0)
+                                                          0.08       1.69 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1065/Z (AN2D0)
+                                                          0.08       1.77 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1063/Z (AN2D0)
+                                                          0.08       1.84 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1061/Z (AN2D0)
+                                                          0.08       1.92 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1059/Z (AN2D0)
+                                                          0.08       2.00 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1057/Z (AN2D0)
+                                                          0.08       2.08 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1055/Z (AN2D0)
+                                                          0.08       2.16 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1053/Z (AN2D0)
+                                                          0.08       2.24 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1051/Z (AN2D0)
+                                                          0.08       2.32 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1049/Z (AN2D0)
+                                                          0.08       2.39 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1047/Z (AN2D0)
+                                                          0.08       2.47 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1045/Z (AN2D0)
+                                                          0.08       2.55 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1043/Z (AN2D0)
+                                                          0.08       2.63 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1041/Z (AN2D0)
+                                                          0.06       2.69 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U1040/Z (CKXOR2D0)
+                                                          0.09       2.78 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U332/Z (AN2D0)
+                                                          0.06       2.84 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U774/Z (AO222D0)
+                                                          0.20       3.03 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U70/ZN (ND2D1)
+                                                          0.10       3.13 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U15/ZN (INVD1)
+                                                          0.06       3.19 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U71/Z (AO22D0)
+                                                          0.33       3.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/dpu_out_1[0] (DPU)
+                                                          0.00       3.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_out_1_left[0] (MTRF_cell)
+                                                          0.00       3.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/inputs_dpu[2][1][0] (switchbox_16_5)
+                                                          0.00       3.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/U1/Z (BUFFD0)       0.18       3.70 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/Mux_Generate0_2/inputs_dpu[2][1][0] (InputMux_16_5_9)
+                                                          0.00       3.70 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/Mux_Generate0_2/U35/ZN (AOI222D0)
+                                                          0.17       3.88 r
+  Silago_bot_inst_2_1/SILEGO_cell/swb/Mux_Generate0_2/U21/ZN (ND4D1)
+                                                          0.05       3.93 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/Mux_Generate0_2/U20/Z (AO22D0)
+                                                          0.09       4.02 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/Mux_Generate0_2/output[0] (InputMux_16_5_9)
+                                                          0.00       4.02 f
+  Silago_bot_inst_2_1/SILEGO_cell/swb/int_v_input_bus[2][0] (switchbox_16_5)
+                                                          0.00       4.02 f
+  Silago_bot_inst_2_1/SILEGO_cell/U110/Z (AO22D0)         0.11       4.14 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_in_0[0] (MTRF_cell)
+                                                          0.00       4.14 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/dpu_in_0[0] (DPU)
+                                                          0.00       4.14 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/d_in[0] (twos_compl_16_4)
+                                                          0.00       4.14 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/U36/ZN (INVD1)
+                                                          0.04       4.18 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/A[0] (twos_compl_16_4_DW01_inc_0_DW01_inc_35)
+                                                          0.00       4.18 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_1/CO (CMPE22D1)
+                                                          0.06       4.23 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_2/CO (CMPE22D1)
+                                                          0.05       4.29 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_3/CO (CMPE22D1)
+                                                          0.05       4.34 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_4/CO (CMPE22D1)
+                                                          0.05       4.40 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_5/CO (CMPE22D1)
+                                                          0.05       4.45 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_6/CO (CMPE22D1)
+                                                          0.05       4.51 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_7/CO (CMPE22D1)
+                                                          0.05       4.56 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_8/CO (CMPE22D1)
+                                                          0.05       4.62 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_9/CO (CMPE22D1)
+                                                          0.05       4.67 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_10/CO (CMPE22D1)
+                                                          0.05       4.72 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_11/CO (CMPE22D1)
+                                                          0.05       4.78 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_12/CO (CMPE22D1)
+                                                          0.05       4.83 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_13/CO (CMPE22D1)
+                                                          0.05       4.89 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_14/CO (CMPE22D1)
+                                                          0.05       4.94 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U1_1_15/CO (CMPE22D1)
+                                                          0.05       4.99 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/U2/Z (CKXOR2D0)
+                                                          0.07       5.06 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/add_103/SUM[16] (twos_compl_16_4_DW01_inc_0_DW01_inc_35)
+                                                          0.00       5.06 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/U5/ZN (IND2D1)
+                                                          0.04       5.10 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/U3/Z (BUFFD0)
+                                                          0.14       5.24 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/U7/ZN (IND2D1)
+                                                          0.03       5.27 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_in_0_neg/d_out[1] (twos_compl_16_4)
+                                                          0.00       5.27 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U60/ZN (MAOI22D0)
+                                                          0.10       5.37 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U943/ZN (OAI22D0)
+                                                          0.05       5.41 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/nacu_in_0[1] (NACU_0_0_1)
+                                                          0.00       5.41 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U372/Z (BUFFD0)
+                                                          0.12       5.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/d_in[1] (twos_compl_16_0)
+                                                          0.00       5.53 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/U24/ZN (INVD1)
+                                                          0.05       5.58 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/A[1] (twos_compl_16_0_DW01_inc_0_DW01_inc_31)
+                                                          0.00       5.58 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_1/CO (CMPE22D1)
+                                                          0.05       5.64 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_2/CO (CMPE22D1)
+                                                          0.05       5.69 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_3/CO (CMPE22D1)
+                                                          0.05       5.75 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_4/CO (CMPE22D1)
+                                                          0.05       5.80 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_5/CO (CMPE22D1)
+                                                          0.05       5.86 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_6/CO (CMPE22D1)
+                                                          0.05       5.91 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_7/CO (CMPE22D1)
+                                                          0.05       5.97 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_8/CO (CMPE22D1)
+                                                          0.05       6.02 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_9/CO (CMPE22D1)
+                                                          0.05       6.07 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_10/CO (CMPE22D1)
+                                                          0.05       6.13 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_11/CO (CMPE22D1)
+                                                          0.05       6.18 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_12/CO (CMPE22D1)
+                                                          0.05       6.24 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_13/CO (CMPE22D1)
+                                                          0.05       6.29 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_14/CO (CMPE22D1)
+                                                          0.05       6.35 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U1_1_15/CO (CMPE22D1)
+                                                          0.05       6.39 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/U2/Z (CKXOR2D0)
+                                                          0.07       6.46 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/add_103/SUM[16] (twos_compl_16_0_DW01_inc_0_DW01_inc_31)
+                                                          0.00       6.46 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/U6/ZN (IND2D1)
+                                                          0.04       6.51 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/U3/Z (BUFFD0)
+                                                          0.12       6.63 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/U7/ZN (IND2D1)
+                                                          0.03       6.66 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_2s_compliment/d_out[12] (twos_compl_16_0)
+                                                          0.00       6.66 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U27/Z (AN2D0)
+                                                          0.08       6.73 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/data_in_2scompl[12] (Squash_Unit_16_11)
+                                                          0.00       6.73 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U142/Z (AO22D0)
+                                                          0.10       6.83 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/lut_input_gen/d_in[12] (Q_format_n_to_one_16_11_11)
+                                                          0.00       6.83 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/lut_input_gen/d_out[12] (Q_format_n_to_one_16_11_11)
+                                                          0.00       6.83 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U141/ZN (AOI222D0)
+                                                          0.24       7.08 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U122/ZN (INVD1)
+                                                          0.03       7.11 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U88/ZN (NR2D1)
+                                                          0.06       7.17 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U28/Z (AN2D0)
+                                                          0.10       7.27 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U87/ZN (ND2D1)
+                                                          0.05       7.31 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U27/ZN (INVD1)
+                                                          0.05       7.36 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U6/ZN (NR2D1)
+                                                          0.02       7.38 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U9/Z (AN2D0)
+                                                          0.06       7.44 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U7/Z (AN4D1)
+                                                          0.06       7.51 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/U171/ZN (OAI22D0)
+                                                          0.07       7.57 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_squash/slope[2] (Squash_Unit_16_11)
+                                                          0.00       7.57 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U197/Z (AO22D0)
+                                                          0.10       7.68 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/in_b[2] (conf_mul_Beh_16_2_1)
+                                                          0.00       7.68 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/in_b[2] (conf_mul_Beh_9_1_1)
+                                                          0.00       7.68 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/a[2] (conf_mul_Beh_9_1_1_DW_mult_tc_1_DW_mult_tc_22)
+                                                          0.00       7.68 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U58/ZN (INVD1)
+                                                          0.02       7.70 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U78/ZN (NR2D0)
+                                                          0.08       7.78 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U15/CO (CMPE42D1)
+                                                          0.27       8.05 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U5/CO (CMPE32D1)
+                                                          0.12       8.18 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U4/CO (CMPE32D1)
+                                                          0.06       8.24 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U3/CO (CMPE32D1)
+                                                          0.06       8.29 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/U2/S (CMPE32D1)
+                                                          0.07       8.36 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/mult_223/product[8] (conf_mul_Beh_9_1_1_DW_mult_tc_1_DW_mult_tc_22)
+                                                          0.00       8.36 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U26/Z (AN2D0)
+                                                          0.07       8.43 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U83/Z (AN2D0)
+                                                          0.08       8.51 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/add_286/U1_1/CO (CMPE32D1)
+                                                          0.06       8.57 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U81/Z (AN2D0)
+                                                          0.08       8.65 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U79/Z (AN2D0)
+                                                          0.08       8.73 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U77/Z (AN2D0)
+                                                          0.08       8.81 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U75/Z (AN2D0)
+                                                          0.08       8.90 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U73/Z (AN2D0)
+                                                          0.08       8.98 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U71/Z (AN2D0)
+                                                          0.08       9.06 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U69/Z (AN2D0)
+                                                          0.07       9.13 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U68/Z (CKXOR2D0)
+                                                          0.10       9.22 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/add_298/A[17] (conf_mul_Beh_9_1_1_DW01_add_0_DW01_add_28)
+                                                          0.00       9.22 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/add_298/U1_17/Z (XOR3D1)
+                                                          0.15       9.38 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/add_298/SUM[17] (conf_mul_Beh_9_1_1_DW01_add_0_DW01_add_28)
+                                                          0.00       9.38 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/U16/Z (AO21D1)
+                                                          0.07       9.44 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U_mul_l/prod[17] (conf_mul_Beh_9_1_1)
+                                                          0.00       9.44 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U42/Z (AN2D0)
+                                                          0.07       9.51 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/add_286/U1_1/CO (CMPE32D1)
+                                                          0.11       9.62 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U137/Z (AN2D0)
+                                                          0.08       9.70 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U135/Z (AN2D0)
+                                                          0.08       9.78 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U133/Z (AN2D0)
+                                                          0.08       9.86 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U131/Z (AN2D0)
+                                                          0.08       9.94 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U129/Z (AN2D0)
+                                                          0.08      10.02 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U127/Z (AN2D0)
+                                                          0.08      10.11 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U125/Z (AN2D0)
+                                                          0.08      10.19 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U123/Z (AN2D0)
+                                                          0.08      10.27 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U121/Z (AN2D0)
+                                                          0.08      10.35 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U119/Z (AN2D0)
+                                                          0.08      10.43 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U117/Z (AN2D0)
+                                                          0.08      10.51 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U115/Z (AN2D0)
+                                                          0.08      10.60 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U113/Z (AN2D0)
+                                                          0.07      10.66 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U112/Z (CKXOR2D0)
+                                                          0.10      10.76 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/add_298/A[31] (conf_mul_Beh_16_2_1_DW01_add_0_DW01_add_24)
+                                                          0.00      10.76 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/add_298/U1_31/Z (XOR3D1)
+                                                          0.15      10.91 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/add_298/SUM[31] (conf_mul_Beh_16_2_1_DW01_add_0_DW01_add_24)
+                                                          0.00      10.91 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/U14/Z (AO21D1)
+                                                          0.08      10.99 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_multiplier/prod[31] (conf_mul_Beh_16_2_1)
+                                                          0.00      10.99 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U26/ZN (AOI21D0)
+                                                          0.04      11.03 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U25/Z (BUFFD0)
+                                                          0.20      11.23 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U529/ZN (IOA21D1)
+                                                          0.05      11.28 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/A[20] (adder_nbits_32_2_1)
+                                                          0.00      11.28 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/A[4] (adder_nbits_32_2_1_DW01_add_1_DW01_add_21)
+                                                          0.00      11.28 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/U1_4/CO (CMPE32D1)
+                                                          0.12      11.40 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/U1_5/CO (CMPE32D1)
+                                                          0.06      11.46 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/U1_6/CO (CMPE32D1)
+                                                          0.06      11.52 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/U1_7/CO (CMPE32D1)
+                                                          0.06      11.57 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_2/CO (adder_nbits_32_2_1_DW01_add_1_DW01_add_21)
+                                                          0.00      11.57 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U8/ZN (INR2D1)
+                                                          0.05      11.62 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/CI (adder_nbits_32_2_1_DW01_add_0_DW01_add_20)
+                                                          0.00      11.62 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_0/CO (CMPE32D1)
+                                                          0.06      11.68 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_1/CO (CMPE32D1)
+                                                          0.06      11.74 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_2/CO (CMPE32D1)
+                                                          0.06      11.79 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_3/CO (CMPE32D1)
+                                                          0.06      11.85 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_4/CO (CMPE32D1)
+                                                          0.06      11.91 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_5/CO (CMPE32D1)
+                                                          0.06      11.97 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_6/CO (CMPE32D1)
+                                                          0.06      12.02 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/U1_7/CO (CMPE32D1)
+                                                          0.05      12.08 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U_add_3/CO (adder_nbits_32_2_1_DW01_add_0_DW01_add_20)
+                                                          0.00      12.08 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/U3/Z (XOR3D1)
+                                                          0.15      12.22 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_Recon_adder/SO[3] (adder_nbits_32_2_1)
+                                                          0.00      12.22 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/carry[3] (Saturation_Unit_1)
+                                                          0.00      12.22 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/U72/ZN (ND2D0)
+                                                          0.05      12.27 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/U70/ZN (AOI22D0)
+                                                          0.08      12.35 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/U66/Z (AN2D0)
+                                                          0.08      12.44 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/U61/ZN (ND2D0)
+                                                          0.07      12.51 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/U28/Z (AO21D0)
+                                                          0.10      12.61 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U_saturation/d_out[1] (Saturation_Unit_1)
+                                                          0.00      12.61 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U634/ZN (OAI222D0)
+                                                          0.10      12.71 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U635/ZN (MAOI22D0)
+                                                          0.09      12.80 r
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U636/ZN (OAI221D0)
+                                                          0.06      12.87 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/U344/Z (AN2D0)
+                                                          0.07      12.94 f
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/acc_out_reg[1]/D (DFCNQD1)
+                                                          0.00      12.94 f
+  data arrival time                                                 12.94
+
+  clock clk (rise edge)                                  15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -0.65      14.35
+  Silago_bot_inst_2_1/SILEGO_cell/MTRF_cell/dpu_gen/U_NACU_0/acc_out_reg[1]/CP (DFCNQD1)
+                                                          0.00      14.35 r
+  library setup time                                     -0.02      14.33
+  data required time                                                14.33
+  --------------------------------------------------------------------------
+  data required time                                                14.33
+  data arrival time                                                -12.94
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.40
+
+
+1
