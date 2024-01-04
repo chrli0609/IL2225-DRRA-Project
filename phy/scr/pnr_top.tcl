@@ -1,7 +1,8 @@
+source ../phy/scr/design_variables.tcl
 cd ../phy/db/part
 read_db drra_wrapper
 
-foreach module $master_partition_module_list {
+foreach module $partition_module_list {
     read_ilm -cell $module -dir ${module}/ilm
 }
 flatten_ilm
