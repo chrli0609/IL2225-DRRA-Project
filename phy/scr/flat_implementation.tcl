@@ -1,4 +1,8 @@
 source ../phy/scr/read_design.tcl
+source ../phy/scr/design_variables.tcl
+source ../phy/scr/floorplan.tcl
+create_floorplan -site core -core_density_size 0.251868007198 0.901249 10 10 10 10
+source ../phy/scr/power_planning.tcl
 place_design
 ccopt_design
 assign_io_pins
