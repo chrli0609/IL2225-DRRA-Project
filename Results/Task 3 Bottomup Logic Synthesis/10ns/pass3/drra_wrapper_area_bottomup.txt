@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : drra_wrapper
+Version: R-2020.09-SP5-3
+Date   : Sat Jan  6 15:14:59 2024
+****************************************
+
+Library(s) Used:
+
+    tcbn90gtc (File: /afs/it.kth.se/pkg/synopsys/extra_libraries/standard_cell/TSMC/tcbn90g_110a/Front_End/timing_power/tcbn90g_110a/tcbn90gtc.db)
+
+Number of ports:                       347549
+Number of nets:                        987493
+Number of cells:                       636925
+Number of combinational cells:         552898
+Number of sequential cells:             78543
+Number of macros/black boxes:               0
+Number of buf/inv:                     126445
+Number of references:                       6
+
+Combinational area:            2410606.199898
+Buf/Inv area:                   242173.208019
+Noncombinational area:         1550313.710371
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               3960919.910269
+Total area:                 undefined
+1
